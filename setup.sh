@@ -17,7 +17,7 @@ else
 fi
 
 if [ ! -f "$HOME/.zshrc" ]; then 
-	ln -s ~/.config/zsh/zshrc ~/.zshrc
+	ln -s ~/.config/zsh/.zshrc ~/.zshrc
 else 
 	echo ".zshrc already exists, this config will not work unless the file is already a symbolic link to ~/.config/zsh/.zshrc"
 fi
