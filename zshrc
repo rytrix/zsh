@@ -20,6 +20,9 @@ export HISTFILE=~/.zsh_history
 
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
 
 # Custom scripts
 
@@ -55,4 +58,3 @@ alias update="flatpak update -y && sudo pacman Syu"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
