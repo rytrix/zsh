@@ -48,13 +48,6 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-export MANPATH="/usr/bin/man:$MANPATH"
-export EDITOR='nvim'
-
-export HISTSIZE=1000
-export SAVEHIST=1000
-export HISTFILE=~/.zsh_history
-
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey  "^[[H"   beginning-of-line
@@ -98,3 +91,6 @@ source ~/dev/vulkansdk/1.3.268.0/setup-env.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

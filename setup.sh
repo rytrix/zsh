@@ -16,8 +16,14 @@ else
 	echo "zsh-syntax-highlighting already installed"
 fi
 
-if [ ! -f "$HOME/.zshrc" ]; then 
-	ln -s ~/.config/zsh/.zshrc ~/.zshrc
+if [ ! -f "$HOME/.zprofile" ]; then 
+	ln -s ~/.config/zsh/.zprofile ~/.zprofile
 else 
-	echo ".zshrc already exists, this config will not work unless the file is already a symbolic link to ~/.config/zsh/.zshrc"
+	echo ".zprofile already exists, this config will not work unless the file is already a symbolic link to ~/.config/zsh/.zprofile"
 fi
+
+# if [ ! -f "$HOME/.zshrc" ]; then 
+# 	ln -s ~/.config/zsh/.zshrc ~/.zshrc
+# else 
+# 	echo ".zshrc already exists, this config will not work unless the file is already a symbolic link to ~/.config/zsh/.zshrc"
+# fi
