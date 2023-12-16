@@ -89,8 +89,5 @@ alias update="flatpak update -y && sudo pacman Syu"
 # source vulkansdk
 source ~/dev/vulkansdk/1.3.268.0/setup-env.sh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
