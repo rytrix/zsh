@@ -17,3 +17,4 @@ export HISTFILE=~/.cache/zsh/.zsh_history
 
 export MOZ_ENABLE_WAYLAND=1
 
+

@@ -82,12 +82,13 @@ alias wifid="nmcli con delete"
 alias wific="nmcli device wifi connect"
 alias bright="brightnessctl s"
 alias icat="kitty +kitten icat"
+alias themes="kitty +kitten themes"
 alias prog="cd ~/Documents/programming"
 alias watch_gpu="watch -n 2 sensors"
-alias update="flatpak update -y && sudo pacman Syu"
 
-# source vulkansdk
-source ~/dev/vulkansdk/1.3.268.0/setup-env.sh
+if [ -f "$HOME/.config/zsh/custom.sh" ]; then
+	. $HOME/.config/zsh/custom.sh
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

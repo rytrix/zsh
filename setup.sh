@@ -22,6 +22,11 @@ else
 	echo ".zprofile already exists, this config will not work unless the file is already a symbolic link to ~/.config/zsh/.zprofile"
 fi
 
+if [ ! -f "$HOME/.config/zsh/custom.sh" ]; then
+	echo "creating a custom.sh file for user specific commands"
+	touch $HOME/.config/zsh/custom.sh
+fi
+
 # if [ ! -f "$HOME/.zshrc" ]; then 
 # 	ln -s ~/.config/zsh/.zshrc ~/.zshrc
 # else 
