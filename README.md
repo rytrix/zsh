@@ -1,10 +1,10 @@
 # zsh
 lightweight zsh configuration
 
-### install to ~/.config/zsh
+install to ~/.config/zsh
 
 ### change default shell
-chsh -s zsh
+chsh
 
 ### in the ~ directory
 p10k configure
