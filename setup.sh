@@ -24,8 +24,7 @@ fi
 
 if [ ! -d "$HOME/.cache/zsh" ]; then 
     echo "creating .cache/zsh directory and .zsh_history file"
-    mkdir $HOME/.cache
-    mkdir $HOME/.cache/zsh
+    mkdir -p $HOME/.cache/zsh
     touch $HOME/.cache/zsh/.zsh_history
 fi
 
