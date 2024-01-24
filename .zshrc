@@ -10,9 +10,9 @@ source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # History file
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE=~/.cache/zsh/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
+export HISTFILE=~/.cache/zsh/.zsh_history
 
 # User configuration
 
