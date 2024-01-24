@@ -17,4 +17,9 @@ export ZDOTDIR="$HOME/.config/zsh"
 export MANPATH="/usr/bin/man:$MANPATH"
 export EDITOR='nvim'
 
+# History file
+export HISTSIZE=10000
+export SAVEHIST=10000
+export HISTFILE=~/.cache/zsh/.zsh_history
+
 export MOZ_ENABLE_WAYLAND=1
