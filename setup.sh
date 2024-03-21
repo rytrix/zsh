@@ -28,9 +28,9 @@ if [ ! -d "$HOME/.cache/zsh" ]; then
     touch $HOME/.cache/zsh/.zsh_history
 fi
 
-if [ ! -f "$HOME/.config/zsh/custom.sh" ]; then
-	echo "creating a custom.sh file for user specific commands"
-	touch $HOME/.config/zsh/custom.sh
+if [ ! -f "$HOME/.config/zsh/custom.zsh" ]; then
+	echo "creating a custom.zsh file for user specific commands"
+	touch $HOME/.config/zsh/custom.zsh
 fi
 
 # if [ ! -f "$HOME/.zshrc" ]; then 

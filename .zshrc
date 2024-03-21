@@ -89,10 +89,10 @@ alias bright="brightnessctl s"
 alias icat="kitty +kitten icat"
 alias themes="kitty +kitten themes"
 alias prog="cd ~/Documents/programming"
-alias watch_gpu="watch -n 2 sensors"
+alias watch_temps="watch -n 2 sensors"
 
-if [ -f "$HOME/.config/zsh/custom.sh" ]; then
-	. $HOME/.config/zsh/custom.sh
+if [ -f "$HOME/.config/zsh/custom.zsh" ]; then
+	. $HOME/.config/zsh/custom.zsh
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.

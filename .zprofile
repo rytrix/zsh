@@ -23,3 +23,5 @@ export SAVEHIST=10000
 export HISTFILE=~/.cache/zsh/.zsh_history
 
 export MOZ_ENABLE_WAYLAND=1
+
+# source ~/.config/sway/env.sh
