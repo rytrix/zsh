@@ -74,7 +74,7 @@ function micl() {
         if [ -n "$1" ]; then
             pactl load-module module-loopback latency_msec="$1"
         else
-            pactl load-module module-loopback latency_msec=1000
+            pactl load-module module-loopback latency_msec=100
         fi 
         loopback_enabled=true
     fi
