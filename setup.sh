@@ -17,6 +17,7 @@ else
 fi
 
 if [ ! -f "$HOME/.zshenv" ]; then 
+    echo "making a symbolic link to .zshenv"
 	ln -s ~/.config/zsh/.zshenv ~/.zshenv
 else 
 	echo ".zshenv already exists, this config will not work unless the file is already a symbolic link to ~/.config/zsh/.zshenv"
