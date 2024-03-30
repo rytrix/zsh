@@ -12,16 +12,3 @@ else
     mkdir -p $HOME/.local/bin/personal
     PATH="$HOME/.local/bin/personal:$PATH"
 fi
-
-export ZDOTDIR="$HOME/.config/zsh"
-export MANPATH="/usr/bin/man:$MANPATH"
-export EDITOR='nvim'
-
-# History file
-export HISTSIZE=20000
-export SAVEHIST=20000
-export HISTFILE=~/.cache/zsh/.zsh_history
-
-export MOZ_ENABLE_WAYLAND=1
-
-# source ~/.config/sway/env.sh

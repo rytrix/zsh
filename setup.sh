@@ -16,10 +16,10 @@ else
 	echo "zsh-syntax-highlighting already installed"
 fi
 
-if [ ! -f "$HOME/.zprofile" ]; then 
-	ln -s ~/.config/zsh/.zprofile ~/.zprofile
+if [ ! -f "$HOME/.zshenv" ]; then 
+	ln -s ~/.config/zsh/.zshenv ~/.zshenv
 else 
-	echo ".zprofile already exists, this config will not work unless the file is already a symbolic link to ~/.config/zsh/.zprofile"
+	echo ".zshenv already exists, this config will not work unless the file is already a symbolic link to ~/.config/zsh/.zshenv"
 fi
 
 if [ ! -d "$HOME/.cache/zsh" ]; then 
@@ -32,9 +32,3 @@ if [ ! -f "$HOME/.config/zsh/custom.zsh" ]; then
 	echo "creating a custom.zsh file for user specific commands"
 	touch $HOME/.config/zsh/custom.zsh
 fi
-
-# if [ ! -f "$HOME/.zshrc" ]; then 
-# 	ln -s ~/.config/zsh/.zshrc ~/.zshrc
-# else 
-# 	echo ".zshrc already exists, this config will not work unless the file is already a symbolic link to ~/.config/zsh/.zshrc"
-# fi
