@@ -12,5 +12,3 @@ export MOZ_ENABLE_WAYLAND=1
 
 export VCPKG_ROOT="$HOME/dev/vcpkg"
 export PATH="$PATH:$VCPKG_ROOT"
-
-. "$HOME/dev/vulkansdk/1.3.275.0/setup-env.sh"
