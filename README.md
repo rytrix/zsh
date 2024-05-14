@@ -3,6 +3,8 @@ lightweight zsh configuration
 
 install to ~/.config/zsh
 
+run ./setup.sh
+
 ### change default shell
 chsh
 
