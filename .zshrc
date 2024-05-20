@@ -75,6 +75,17 @@ function micl() {
     fi
 }
 
+function fzfd() {
+    if [[ -n $1 ]] then
+        location=$(find ~ ~/Documents/programming ~/Documents ~/Documents/classes ~/Documents/dotfiles -mindepth 0 -maxdepth 1 -type d | fzf -q $1)
+    else
+        location=$(find ~ ~/Documents/programming ~/Documents ~/Documents/classes ~/Documents/dotfiles -mindepth 0 -maxdepth 1 -type d | fzf)
+    fi
+    cd $location
+}
+
+bindkey -s '^F' 'fzfd\n'
+
 alias vol="amixer set Master"
 alias mic="amixer set Capture"
 alias wifils="nmcli device wifi list"
