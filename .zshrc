@@ -77,9 +77,9 @@ function micl() {
 
 function fzfd() {
     if [[ -n $1 ]] then
-        location=$(find ~ ~/Documents/programming ~/Documents ~/Documents/classes ~/Documents/dotfiles -mindepth 0 -maxdepth 1 -type d | fzf -q $1)
+        location=$(find ~ ~/Documents/programming ~/Documents ~/Documents/classes ~/Documents/dotfiles -mindepth 1 -maxdepth 1 -type d | fzf -q $1)
     else
-        location=$(find ~ ~/Documents/programming ~/Documents ~/Documents/classes ~/Documents/dotfiles -mindepth 0 -maxdepth 1 -type d | fzf)
+        location=$(find ~ ~/Documents/programming ~/Documents ~/Documents/classes ~/Documents/dotfiles -mindepth 1 -maxdepth 1 -type d | fzf)
     fi
     cd $location
 }
