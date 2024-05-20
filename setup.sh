@@ -23,10 +23,9 @@ else
 	echo ".zshenv already exists, this config will not work unless the file is already a symbolic link to ~/.config/zsh/.zshenv"
 fi
 
-if [ ! -d "$HOME/.cache/zsh" ]; then 
-    echo "creating .cache/zsh directory and .zsh_history file"
-    mkdir -p $HOME/.cache/zsh
-    touch $HOME/.cache/zsh/.zsh_history
+if [ ! -f "$HOME/.config/zsh" ]; then 
+    echo "creating .zsh_history file"
+    touch $HOME/.config/zsh/.zsh_history
 fi
 
 if [ ! -f "$HOME/.config/zsh/custom.zsh" ]; then
