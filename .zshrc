@@ -56,25 +56,6 @@ bindkey  "^[[3~"  delete-char
 
 # Custom scripts
 
-# Initialize the loopback module toggle variable
-loopback_enabled=false
-# Function to toggle the loopback module on and off
-function micl() {
-    if $loopback_enabled; then
-        echo "loopback off"
-        pactl unload-module module-loopback
-        loopback_enabled=false
-    else
-        echo "loopback on"
-        if [ -n "$1" ]; then
-            pactl load-module module-loopback latency_msec="$1"
-        else
-            pactl load-module module-loopback latency_msec=100
-        fi 
-        loopback_enabled=true
-    fi
-}
-
 function fzfd() {
     if [[ -n $1 ]] then
         location=$(find ~ ~/Documents/programming ~/Documents ~/Documents/classes ~/Documents/dotfiles -mindepth 1 -maxdepth 1 -type d | fzf -q $1)
