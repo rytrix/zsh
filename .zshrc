@@ -70,6 +70,11 @@ alias themes="kitty +kitten themes"
 alias prog="cd ~/Documents/programming"
 alias watch_temps="watch -n 2 sensors"
 
+alias ll="ls -la"
+alias la="ls -a"
+alias ..="cd .."
+alias ...="cd ../.."
+
 if [ -f "$HOME/.config/zsh/custom.zsh" ]; then
 	. $HOME/.config/zsh/custom.zsh
 fi
