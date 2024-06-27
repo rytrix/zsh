@@ -1,9 +1,3 @@
-if [ ! -d "$HOME/.config/zsh/powerlevel10k" ]; then 
-	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.config/zsh/powerlevel10k
-else
-	echo "powerlevel10k already installed"
-fi
-
 if [ ! -d "$HOME/.config/zsh/zsh-autosuggestions" ]; then 
 	git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh/zsh-autosuggestions
 else
