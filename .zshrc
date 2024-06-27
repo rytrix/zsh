@@ -74,4 +74,4 @@ if [ -f "$HOME/.config/zsh/custom.zsh" ]; then
 	. $HOME/.config/zsh/custom.zsh
 fi
 
-eval "$(oh-my-posh init zsh --config $HOME/Documents/dotfiles/powerlevel10k_lean.omp.json)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/omp.json)"
