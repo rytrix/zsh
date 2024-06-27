@@ -23,7 +23,7 @@ else
 	echo ".zshenv already exists, this config will not work unless the file is already a symbolic link to ~/.config/zsh/.zshenv"
 fi
 
-if [ ! -f "$HOME/.config/zsh" ]; then 
+if [ ! -f "$HOME/.config/zsh/.zsh_history" ]; then 
     echo "creating .zsh_history file"
     touch $HOME/.config/zsh/.zsh_history
 fi
@@ -31,4 +31,12 @@ fi
 if [ ! -f "$HOME/.config/zsh/custom.zsh" ]; then
 	echo "creating a custom.zsh file for user specific commands"
 	touch $HOME/.config/zsh/custom.zsh
+fi
+
+if ! command -v oh-my-posh &> /dev/null
+then
+    echo "oh-my-posh not installed, installing to ~/.local/bin"
+    curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
+else
+    echo "oh-my-posh already installed"
 fi
