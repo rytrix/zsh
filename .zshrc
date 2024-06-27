@@ -79,6 +79,6 @@ if [ -f "$HOME/.config/zsh/custom.zsh" ]; then
 	. $HOME/.config/zsh/custom.zsh
 fi
 
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
-eval "$(oh-my-posh init zsh --config $HOME/.config/omp.json)"
+# eval "$(oh-my-posh init zsh --config $HOME/.config/omp.json)"
