@@ -30,7 +30,7 @@ fi
 if ! command -v starship &> /dev/null
 then
     echo "starship not installed, installing to ~/.local/bin"
-    curl -sS https://starship.rs/install.sh | sh
+    curl -sS https://starship.rs/install.sh | sh -s -- -b ~/.local/bin
 else
     echo "starship already installed"
 fi
@@ -38,7 +38,7 @@ fi
 # if ! command -v oh-my-posh &> /dev/null
 # then
 #     echo "oh-my-posh not installed, installing to ~/.local/bin"
-#     curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
+#     curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
 # else
 #     echo "oh-my-posh already installed"
 # fi
