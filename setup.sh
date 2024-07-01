@@ -27,10 +27,18 @@ if [ ! -f "$HOME/.config/zsh/custom.zsh" ]; then
 	touch $HOME/.config/zsh/custom.zsh
 fi
 
-if ! command -v oh-my-posh &> /dev/null
+if ! command -v starship &> /dev/null
 then
-    echo "oh-my-posh not installed, installing to ~/.local/bin"
-    curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
+    echo "starship not installed, installing to ~/.local/bin"
+    curl -sS https://starship.rs/install.sh | sh
 else
-    echo "oh-my-posh already installed"
+    echo "starship already installed"
 fi
+
+# if ! command -v oh-my-posh &> /dev/null
+# then
+#     echo "oh-my-posh not installed, installing to ~/.local/bin"
+#     curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
+# else
+#     echo "oh-my-posh already installed"
+# fi
