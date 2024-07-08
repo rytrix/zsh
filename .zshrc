@@ -79,6 +79,26 @@ if [ -f "$HOME/.config/zsh/custom.zsh" ]; then
 	. $HOME/.config/zsh/custom.zsh
 fi
 
-eval "$(starship init zsh)"
+# Brew 
+if [[ -o interactive ]] && [[ -d /home/linuxbrew/.linuxbrew ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+  if type brew &>/dev/null; then
+    if [[ -w /home/linuxbrew/.linuxbrew ]]; then
+      if [[ ! -L "$(brew --prefix)/share/zsh/site-functions/_brew" ]]; then
+        brew completions link
+      fi
+    fi
+  fi
+fi
 
-# eval "$(oh-my-posh init zsh --config $HOME/.config/omp.json)"
+if type starship &>/dev/null; then
+    eval "$(starship init zsh)"
+fi
+
+# if type oh-my-posh &>/dev/null; then
+#     eval "$(oh-my-posh init zsh --config $HOME/.config/omp.json)"
+# fi
+
+if type zoxide &>/dev/null; then
+    eval "$(zoxide init zsh)"
+fi
