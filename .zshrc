@@ -91,6 +91,8 @@ if [[ -o interactive ]] && [[ -d /home/linuxbrew/.linuxbrew ]]; then
   fi
 fi
 
+export HOMEBREW_NO_ANALYTICS=1
+
 if type starship &>/dev/null; then
     eval "$(starship init zsh)"
 fi
