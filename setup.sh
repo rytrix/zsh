@@ -27,6 +27,9 @@ if [ ! -f "$HOME/.config/zsh/custom.zsh" ]; then
 	touch $HOME/.config/zsh/custom.zsh
 fi
 
+mkdir -p "$HOME/.local/bin"
+mkdir -p "$HOME/.local/bin/personal"
+
 if ! command -v starship &> /dev/null
 then
     echo "starship not installed, installing to ~/.local/bin"
